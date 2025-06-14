@@ -7,12 +7,12 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Carla Harumi - Portfolio",
-  description: "Portfolio pessoal de Carla Harumi - Desenvolvedora Full Stack",
-  keywords: ["portfolio", "desenvolvedor", "react", "nextjs", "carla harumi"],
+  description: "Portfolio pessoal de Carla Harumi",
+  keywords: ["carla harumi"],
   authors: [{ name: "Carla Harumi" }],
   openGraph: {
     title: "Carla Harumi - Portfolio",
-    description: "Portfolio pessoal de Carla Harumi - Desenvolvedora Full Stack",
+    description: "Portfolio pessoal de Carla Harumi",
     type: "website",
   },
     generator: 'v0.dev'
