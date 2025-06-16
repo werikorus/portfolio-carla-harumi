@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Carla Harumi - Social Media | Storyteller | Videomaker Mobile",
+  title: "Carla Harumi - Potfólio",
   description:
     "Como posso te ajudar? Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC. Entre em contato: +55 11 951085736",
   keywords: "social media, storyteller, videomaker mobile, florianópolis, marketing digital, carla harumi",
@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     description:
       "Como posso te ajudar? Profissional de Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC",
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
