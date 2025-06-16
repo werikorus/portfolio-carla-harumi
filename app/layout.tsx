@@ -6,14 +6,24 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Carla Harumi - Portfolio",
-  description: "Portfolio pessoal de Carla Harumi",
-  keywords: ["carla harumi"],
+  title: "Carla Harumi - Social Media | Storyteller | Videomaker Mobile",
+  description:
+    "Como posso te ajudar? Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC. Entre em contato: +55 11 951085736",
+  keywords: "social media, storyteller, videomaker mobile, florianópolis, marketing digital, carla harumi",
   authors: [{ name: "Carla Harumi" }],
+  creator: "Carla Harumi",
   openGraph: {
-    title: "Carla Harumi - Portfolio",
-    description: "Portfolio pessoal de Carla Harumi",
+    title: "Carla Harumi - Social Media | Storyteller | Videomaker Mobile",
+    description:
+      "Como posso te ajudar? Profissional de Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC",
     type: "website",
+    locale: "pt_BR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Carla Harumi - Social Media | Storyteller | Videomaker Mobile",
+    description:
+      "Como posso te ajudar? Profissional de Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC",
   },
     generator: 'v0.dev'
 }
@@ -24,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="pt-BR">
       <body className={inter.className}>{children}</body>
     </html>
   )
