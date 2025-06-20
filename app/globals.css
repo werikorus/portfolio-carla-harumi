@@ -138,9 +138,25 @@ html {
 
 /* Section alignment */
 .section-container {
-  max-width: 72rem; /* 6xl */
+  max-width: 72rem;
+  display: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 3rem 1.5rem;
+}
+
+.about-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin: auto;
+}
+
+.about-text-title {
+  font-size: 2.5rem;
 }
 
 @media (min-width: 1024px) {
