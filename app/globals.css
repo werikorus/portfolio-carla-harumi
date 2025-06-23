@@ -159,6 +159,20 @@ html {
   font-size: 2.5rem;
 }
 
+.portfolio-pieces{
+  height: 100vh;
+  display: flex;
+}
+
+.contato-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+}
+
 @media (min-width: 1024px) {
   .section-container {
     padding: 3rem 3rem;
