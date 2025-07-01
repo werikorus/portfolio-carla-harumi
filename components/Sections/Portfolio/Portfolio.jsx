@@ -21,29 +21,29 @@ export default function Portifolio(){
   //];
 
   const stories = [
-    "https://vimeo.com/1097721612",
-    "https://vimeo.com/1097721619",
-    "https://vimeo.com/1097721602",
-    "https://vimeo.com/1097721630",
+    "https://portifolio-carla-harumi.b-cdn.net/stories/story-cada-pesssoa-importa.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/stories/story-dia-da-fruta.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/stories/story-felipe.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/stories/story-andre.mp4",
   ];
 
   const entrevistas = [
-    "/videos/rosto-da-marca/rosto-da-marca-1.mp4",
-    "/videos/rosto-da-marca/rosto-da-marca-2.mp4",
-    "/videos/rosto-da-marca/rosto-da-marca-3.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/rosto-da-marca/rosto-da-marca-1.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/rosto-da-marca/rosto-da-marca-2.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/rosto-da-marca/rosto-da-marca-3.mp4",
   ];
 
   const storymakerVideos = [
-    "/videos/storymaker/storymaker-coco-bambu.mp4",
-    "/videos/storymaker/storymaker-dia-das-maes.mp4",
-    "/videos/storymaker/storymaker-beto-carreiro.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/storymaker/storymaker-coco-bambu.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/storymaker/storymaker-dia-das-maes.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/storymaker/storymaker-beto-carreiro.mp4",
   ];
 
   const videomakerMobileVideos = [
-    '/videos/videomaker-mobile/videomaker-mobile-1.mp4',
-    '/videos/videomaker-mobile/videomaker-mobile-2.mp4',
-    '/videos/videomaker-mobile/videomaker-mobile-3.mp4',
-    '/videos/videomaker-mobile/videomaker-mobile-4.mp4',
+    "https://portifolio-carla-harumi.b-cdn.net/videomaker-mobile/videomaker-mobile-1.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/videomaker-mobile/videomaker-mobile-2.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/videomaker-mobile/videomaker-mobile-3.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/videomaker-mobile/videomaker-mobile-4.mp4",
   ];
 
   return (
