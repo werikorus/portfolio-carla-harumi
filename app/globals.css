@@ -1,6 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --neon-green: #00BE67;  
+  --neon-blue: #00A1D5;
+  --dark-blue: #001D31;
+  --deep-purple: #2B0E66;
+  --neon-pink: #F500BD;
+  --light-pink: #FF86C9;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -128,6 +139,7 @@ html {
   }
 }
 
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -171,6 +183,112 @@ html {
   align-self: center;
   justify-content: center;
   margin: auto;
+}
+
+.neon-text-green {
+  color: var(--neon-green);
+  text-shadow: 0 0 5px rgba(0, 190, 103, 0.5), 0 0 10px rgba(0, 190, 103, 0.3);
+}
+
+.neon-text-blue {
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px rgba(0, 161, 213, 0.5), 0 0 10px rgba(0, 161, 213, 0.3);
+}
+
+.neon-text-pink {
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px rgba(245, 0, 189, 0.5), 0 0 10px rgba(245, 0, 189, 0.3);
+}
+
+.neon-border {
+  position: relative;
+}
+
+.neon-border::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid var(--neon-pink);
+  box-shadow: 0 0 5px var(--neon-pink), inset 0 0 5px var(--neon-pink);
+  pointer-events: none;
+}
+
+.neon-border-green::after {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 5px var(--neon-green), inset 0 0 5px var(--neon-green);
+}
+
+.neon-border-blue::after {
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 5px var(--neon-blue), inset 0 0 5px var(--neon-blue);
+}
+
+.neon-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--neon-pink);
+  background-color: transparent;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px var(--neon-pink), inset 0 0 5px var(--neon-pink);
+}
+
+.neon-button:hover {
+  background-color: rgba(245, 0, 189, 0.2);
+  box-shadow: 0 0 10px var(--neon-pink), inset 0 0 10px var(--neon-pink);
+}
+
+.neon-button-green {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 5px var(--neon-green), inset 0 0 5px var(--neon-green);
+}
+
+.neon-button-green:hover {
+  background-color: rgba(0, 190, 103, 0.2);
+  box-shadow: 0 0 10px var(--neon-green), inset 0 0 10px var(--neon-green);
+}
+
+.neon-button-blue {
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 5px var(--neon-blue), inset 0 0 5px var(--neon-blue);
+}
+
+.neon-button-blue:hover {
+  background-color: rgba(0, 161, 213, 0.2);
+  box-shadow: 0 0 10px var(--neon-blue), inset 0 0 10px var(--neon-blue);
+}
+
+.cyberpunk-grid {
+  position: relative;
+}
+
+.cyberpunk-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(to right, rgba(245, 0, 189, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 0, 189, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--deep-purple) 100%);
 }
 
 @media (min-width: 1024px) {

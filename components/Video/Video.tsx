@@ -2,7 +2,7 @@ interface VideoProps {
   source: string; 
 }
 
-const Video = (videoProps: VideoProps) => {
+export const Video = (videoProps: VideoProps) => {
   const { source } = videoProps;
 
   return (
