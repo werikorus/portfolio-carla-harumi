@@ -19,14 +19,13 @@ export const Video = (videoProps: VideoProps) => {
       <track src={source} kind="subtitles" />
     </video>
 
-
     //PARA URL EXTERNA
     //<>
     //  <div style={{ padding: "177.78% 0 0 0", position: "relative" }}>
     //    <iframe
-    //      src=""
+    //      src="https://iframe.mediadelivery.net/play/461845/aeb1c340-d463-42cb-a3f3-370ad778b006"
     //      frameBorder="0"
-    //      //allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+    //      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
     //      style={{
     //        position: "absolute",
     //        top: 0,
@@ -37,7 +36,6 @@ export const Video = (videoProps: VideoProps) => {
     //      title="story-cada-pesssoa-importa"
     //    ></iframe>
     //  </div>
-    //  <script src="https://player.vimeo.com/api/player.js"></script>
     //</>
   );
 };

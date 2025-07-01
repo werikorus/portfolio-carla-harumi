@@ -4,11 +4,11 @@ import { Video } from "@/components/Video";
 
 export default function Metricas(){
   const metricasVideos = [
-    "/videos/metricas/metrica-1-dia-das-mulheres.mp4",
-    "/videos/metricas/metrica-2-fs-movies.mp4",
-    "/videos/metricas/metrica-3-cada-pessoa-importa.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/metricas/metrica-1-dia-das-mulheres.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/metricas/metrica-2-fs-movies.mp4",
+    "https://portifolio-carla-harumi.b-cdn.net/metricas/metrica-3-cada-pessoa-importa.mp4",
   ];
-
+ 
   return (
     <section id="metricas" className="section-container">
       <div className="space-y-16">
