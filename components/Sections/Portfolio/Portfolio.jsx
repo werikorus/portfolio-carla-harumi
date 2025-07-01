@@ -13,11 +13,18 @@ export default function Portifolio(){
     "/images/portfolio/carrocel-frida/CARROSSEL5.png",
   ];
 
+  //const stories = [
+  //  "/videos/stories/story-cada-pesssoa-importa.mp4",
+  //  "/videos/stories/story-dia-da-fruta.mp4",
+  //  "/videos/stories/story-andre.mp4",
+  //  "/videos/stories/story-felipe.mp4",
+  //];
+
   const stories = [
-    "/videos/stories/story-cada-pesssoa-importa.mp4",
-    "/videos/stories/story-dia-da-fruta.mp4",
-    "/videos/stories/story-andre.mp4",
-    "/videos/stories/story-felipe.mp4",
+    "https://vimeo.com/1097721612",
+    "https://vimeo.com/1097721619",
+    "https://vimeo.com/1097721602",
+    "https://vimeo.com/1097721630",
   ];
 
   const entrevistas = [

@@ -11,7 +11,6 @@ export default function Metricas(){
 
   return (
     <section id="metricas" className="section-container">
-      return (
       <div className="space-y-16">
         <div className="text-center">
           <h1 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center">
