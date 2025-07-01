@@ -10,21 +10,24 @@ interface cardProps {
 
 const Cards: React.FC<cardProps> = ({ image, subscription, title = 'Objetivo'}) =>{
   return (
-    <div className={`bg-slate-800 rounded-lg p-4 ${styles.container}`}>
+    <div className={`${styles.container} flex-col justify-center`}>
       <Image
-        src={image}
+        src={`${image}?height=1350&width=1080&text=card`}
         alt="Card Image"
-        width={300}
-        height={300}
-        className="w-full h-full object-cover"
-        loading="eager"
+        width={1350}
+        height={1080}
+        className="w-auto h-auto object-cover"
+        placeholder="blur"
+        blurDataURL={`${image}?height=1350&width=1080&text=card`}
       />
       <br />
-      <div className="border-2 border-green-400 rounded-lg p-6">
+      <div
+        className={`${styles.footerText} border-2 border-green-400 rounded-lg p-6`}
+      >
         <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green">
           {title}
         </h4>
-        <p className="text-white">{subscription}</p>
+        <p className="text-white space-y-6">{subscription}</p>
       </div>
     </div>
   );

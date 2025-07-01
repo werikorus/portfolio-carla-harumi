@@ -19,7 +19,7 @@ export const portFolioCards: cardProps[] = [
   },
   {
     image:
-      "/images/portfolio/posts/post-carta-mais-quatro.jpeg?height=1350&width=1080&text=Carta+Uno",
+      "/images/portfolio/posts/post-carta-mais-quatro.png?height=1350&width=1080&text=Carta+Uno",
     subscription: `
       Nesse post foi usada a carta +4 do Uno como metáfora de
       virada de jogo, apresentando o plano de saúde como a "carta

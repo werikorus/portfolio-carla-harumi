@@ -29,7 +29,7 @@ export default function Portifolio(){
   const storymakerVideos = [
     "/videos/storymaker/storymaker-coco-bambu.mp4",
     "/videos/storymaker/storymaker-dia-das-maes.mp4",
-    "/videos/storymaker/storymaker-dia-das-maess.mp4",
+    "/videos/storymaker/storymaker-beto-carreiro.mp4",
   ];
 
   const videomakerMobileVideos = [
@@ -65,7 +65,7 @@ export default function Portifolio(){
                   <Image
                     src={`${i}?height=1350&width=1080&text=Frida+Kahlo`}
                     alt={`Frida Kahlo ${i}`}
-                    width={100}
+                    width={1350}
                     height={1080}
                     className="w-full h-full object-cover"
                     placeholder="blur"
@@ -90,7 +90,11 @@ export default function Portifolio(){
           </div>
           <br />
           {/* CARDS: Baile do Leão  - Carta 4 Uno*/}
-          <div className="flex justify-between color-yellow">
+          <div
+            //className="flex justify-around bg-slate-800 rounded-xl"
+            className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 bg-slate-800 rounded-xl"
+            style={{ padding: "1rem" }}
+          >
             <Cards
               image={portFolioCards[0].image}
               subscription={portFolioCards[0].subscription}
