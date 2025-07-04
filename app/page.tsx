@@ -1,15 +1,13 @@
-"use client"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+"use client";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import Video from "@/components/Video/Video";
-import SlideImages from "@/components/SlideImages/SlideImages";
 import HomeSection from "@/components/Sections/HomeSection/HomeSection";
 import About from "@/components/Sections/About/About";
 import Portifolio from "@/components/Sections/Portfolio/Portfolio";
 import Metricas from "@/components/Sections/Metricas/Metricas";
 import Contact from "@/components/Sections/Contact/Contact";
-//import { About, Portifolio,  Metricas, Contact } from "@/components";
 
 export default function Home() {
   return (
@@ -96,4 +94,3 @@ export default function Home() {
     </div>
   );
 }
-

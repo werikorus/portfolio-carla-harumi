@@ -3,22 +3,16 @@ import { Video } from "@/components/Video";
 import Image from "next/image";
 import Cards from "./fragments/Cards/Cards";
 import { portFolioCards } from "./fragments/Constants";
+import SlideImages from "@/components/SlideImages/SlideImages";
 
-export default function Portifolio(){
+export default function Portifolio() {
   const carrocelFrida = [
-    "/images/portfolio/carrocel-frida/CARROSSEL1.png",
-    "/images/portfolio/carrocel-frida/CARROSSEL2.png",
-    "/images/portfolio/carrocel-frida/CARROSSEL3.png",
-    "/images/portfolio/carrocel-frida/CARROSSEL4.png",
-    "/images/portfolio/carrocel-frida/CARROSSEL5.png",
+    "/images/portfolio/carrocel-frida/CARROSSEL1.webp",
+    "/images/portfolio/carrocel-frida/CARROSSEL2.webp",
+    "/images/portfolio/carrocel-frida/CARROSSEL3.webp",
+    "/images/portfolio/carrocel-frida/CARROSSEL4.webp",
+    "/images/portfolio/carrocel-frida/CARROSSEL5.webp",
   ];
-
-  //const stories = [
-  //  "/videos/stories/story-cada-pesssoa-importa.mp4",
-  //  "/videos/stories/story-dia-da-fruta.mp4",
-  //  "/videos/stories/story-andre.mp4",
-  //  "/videos/stories/story-felipe.mp4",
-  //];
 
   const stories = [
     "https://portifolio-carla-harumi.b-cdn.net/stories/story-cada-pesssoa-importa.mp4",
@@ -63,24 +57,7 @@ export default function Portifolio(){
               Criação de conteúdo
             </h1>
             {/* Carrossel de imagens */}
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {/*TODO: colocar carrocel de imagens aqui e adaptar para telas pequenas*/}
-              {/*<SlideImages images={carrocelFrida} />*/}
-
-              {carrocelFrida.map((i) => (
-                <div key={i} className="rounded-lg overflow-hidden">
-                  <Image
-                    src={`${i}?height=1350&width=1080&text=Frida+Kahlo`}
-                    alt={`Frida Kahlo ${i}`}
-                    width={1350}
-                    height={1080}
-                    className="w-full h-full object-cover"
-                    placeholder="blur"
-                    blurDataURL={i}
-                  />
-                </div>
-              ))}
-            </div>
+            <SlideImages images={carrocelFrida} />
 
             {/* Objetivo */}
             <div className="border-2 border-green-400 rounded-lg p-6">
@@ -124,7 +101,7 @@ export default function Portifolio(){
               forma estratégica.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 color-yellow">
               {stories.map((source) => (
                 <div
                   key={source}
@@ -178,7 +155,7 @@ export default function Portifolio(){
             <h3 className="text-2xl font-bold text-green-400 text-center neon-text-green">
               Storymaker
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {storymakerVideos.map((source) => (
                 <div
                   key={source}

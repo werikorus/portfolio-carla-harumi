@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import styles from './Cards.styles.module.css';
+import styles from "./Cards.styles.module.css";
+import FullScreenImage from "@/components/FullScreenImage/FullScreenImage";
 
 interface cardProps {
   image: string;
@@ -8,17 +9,16 @@ interface cardProps {
   subscription: string;
 }
 
-const Cards: React.FC<cardProps> = ({ image, subscription, title = 'Objetivo'}) =>{
+const Cards: React.FC<cardProps> = ({
+  image,
+  subscription,
+  title = "Objetivo",
+}) => {
   return (
     <div className={`${styles.container} flex-col justify-center`}>
-      <Image
+      <FullScreenImage
         src={`${image}?height=1350&width=1080&text=card`}
         alt="Card Image"
-        width={1350}
-        height={1080}
-        className="w-auto h-auto object-cover"
-        placeholder="blur"
-        blurDataURL={`${image}?height=1350&width=1080&text=card`}
       />
       <br />
       <div
@@ -31,6 +31,6 @@ const Cards: React.FC<cardProps> = ({ image, subscription, title = 'Objetivo'}) 
       </div>
     </div>
   );
-}
+};
 
 export default Cards;

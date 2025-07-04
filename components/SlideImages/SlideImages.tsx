@@ -1,71 +1,56 @@
-import React from 'react';
-import Image from "next/image"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
+import React from "react";
+import Image from "next/image";
+import { Carousel } from "@material-tailwind/react";
+import { useMediaQuery } from "usehooks-ts";
+import FullScreenImage from "../FullScreenImage/FullScreenImage";
 interface SlideImagesProps {
   images: string[];
 }
 
-const carrocelFrida = [
-  "/images/portfolio/carrocel-frida/CARROSSEL1.png",
-  "/images/portfolio/carrocel-frida/CARROSSEL2.png",
-  "/images/portfolio/carrocel-frida/CARROSSEL3.png",
-  "/images/portfolio/carrocel-frida/CARROSSEL4.png",
-  "/images/portfolio/carrocel-frida/CARROSSEL5.png",
-];
-
-
 const SlideImages: React.FC<SlideImagesProps> = ({ images }) => {
-  //const isMobile = useMediaQuery("(max-width:768px)");
-
-  const isMobile = true;
+  const isMobile = useMediaQuery("(max-width:768px)");
 
   if (isMobile) {
     return (
-      <Swiper spaceBetween={10} slidesPerView={1}>
-        {carrocelFrida.map((src, i) => (
-          <SwiperSlide key={i}>
-            <img src={src} alt={`imagem-${i}`} />
-          </SwiperSlide>
+      <Carousel
+        transition={{ duration: 1 }}
+        className="rounded-xl"
+        placeholder="FRIDA"
+        onResize={() => console.log("onPointerLeaveCapture")}
+        onResizeCapture={() => console.log("onPointerLeaveCapture")}
+        onPointerEnterCapture={() => console.log("onPointerEnterCapture")}
+        onPointerLeaveCapture={() => console.log("onPointerLeaveCapture")}
+        draggable={true}
+      >
+        {images.map((src, i) => (
+          <div key={i} className="rounded-sm overflow-hidden">
+            <Image
+              src={`${src}?height=1350&width=1080&text=Frida+Kahlo`}
+              alt={`Frida Kahlo ${i}`}
+              width={1350}
+              height={1080}
+              className="object-cover"
+              placeholder="blur"
+              blurDataURL={src}
+            />
+          </div>
         ))}
-      </Swiper>
+      </Carousel>
     );
   }
 
   return (
-    <div className="grid grid-cols-5 gap-4">
-      {carrocelFrida.map((src, i) => (
-        <img key={i} src={src} alt={`imagem-${i}`} />
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
+      {images.map((i) => (
+        <div key={i} className="rounded-lg overflow-hidden">
+          <FullScreenImage
+            src={`${i}?height=1350&width=1080&text=Frida+Kahlo`}
+            alt={`Frida Kahlo ${i}`}
+          />
+        </div>
       ))}
     </div>
   );
-  //return (
-  //  <Swiper
-  //    spaceBetween={1}
-  //    slidesPerView={images.length}
-  //    onSlideChange={() => console.log("slide change")}
-  //    onSwiper={(swiper) => console.log(swiper)}
-  //  >
-  //    {images.map((i, idx) => (
-  //      //console.log('WERIK imgs: ',i);
-  //      <SwiperSlide>
-  //        <div key={i} className="rounded-lg overflow-hidden">
-  //          <Image
-  //            src={`${i}?height=1350&width=1080&text=Frida+Kahlo`}
-  //            alt={`Frida Kahlo ${i}`}
-  //            width={135}
-  //            height={135}
-  //            className="w-full h-full object-cover"
-  //            placeholder="blur"
-  //            blurDataURL={i}
-  //          />
-  //        </div>
-  //      </SwiperSlide>
-  //    ))}
-  //    ...
-  //  </Swiper>
-  //);
 };
 
 export default SlideImages;

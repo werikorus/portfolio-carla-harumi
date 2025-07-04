@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import FullScreenImage from "@/components/FullScreenImage/FullScreenImage";
+
+//TODO: mudar imagens de formato png para webp
 
 export default function HomeSection() {
   return (
@@ -53,22 +56,16 @@ export default function HomeSection() {
         </div>
 
         <div className="flex-shrink-0 lg:ml-12">
-          <div className="relative">
-            <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
-              {/*TODO: Adaptar foto para telas pequenas*/}
-              <Image
-                src="/images/profile-image.png"
-                alt="Carla Harumi"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+          <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+            <FullScreenImage
+              src="/images/profile-image.webp"
+              alt="Carla Harumi"
+            />
           </div>
         </div>
       </div>
     </section>
   );
-};
+}
 
 //export default HomeSection;
