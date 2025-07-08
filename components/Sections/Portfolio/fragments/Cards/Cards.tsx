@@ -24,7 +24,7 @@ const Cards: React.FC<cardProps> = ({
       <div
         className={`${styles.footerText} border-2 border-green-400 rounded-lg p-6`}
       >
-        <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green">
+        <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
           {title}
         </h4>
         <p className="text-white space-y-6">{subscription}</p>
