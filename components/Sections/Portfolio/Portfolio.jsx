@@ -5,6 +5,9 @@ import Cards from "./fragments/Cards/Cards";
 import { portFolioCards } from "./fragments/Constants";
 import SlideImages from "@/components/SlideImages/SlideImages";
 
+//TODO: mudar vídeos para google drive
+//TODO: centralizar títulos e textos
+
 export default function Portifolio() {
   const carrocelFrida = [
     "/images/portfolio/carrocel-frida/CARROSSEL1.webp",
@@ -61,10 +64,10 @@ export default function Portifolio() {
 
             {/* Objetivo */}
             <div className="border-2 border-green-400 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green">
-                Objetivo:
+              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
+                Objetivo
               </h4>
-              <p className="text-white">
+              <p className="text-white text-center">
                 Criado para ir além da homenagem tradicional, este carrossel usa
                 Frida Kahlo como símbolo de superação, incentivando o
                 autoconhecimento e o protagonismo feminino de forma estratégica
@@ -76,7 +79,7 @@ export default function Portifolio() {
           {/* CARDS: Baile do Leão  - Carta 4 Uno*/}
           <div
             //className="flex justify-around bg-slate-800 rounded-xl"
-            className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 bg-slate-800 rounded-xl"
+            className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 bg-slate-800 rounded-xl text-center"
             style={{ padding: "1rem" }}
           >
             <Cards
@@ -131,10 +134,10 @@ export default function Portifolio() {
             </div>
 
             <div className="border-2 border-green-400 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green">
-                Objetivo:
+              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
+                Objetivo
               </h4>
-              <p className="text-white">
+              <p className="text-white text-center">
                 Minha participação como entrevistadora nos vídeos teve como
                 objetivo representar o clima leve e alto astral da empresa,
                 comunicando campanhas, ações e acontecimentos internos de forma
@@ -168,15 +171,16 @@ export default function Portifolio() {
 
             {/* Objetivo */}
             <div className="border-2 border-green-400 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green">
-                Objetivos:
+              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
+                Objetivos
+              </h4>
+              <br />
+
+              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center">
+                Almoço Coco Bambu
               </h4>
 
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue">
-                Almoço Côco Bambu
-              </h4>
-
-              <p className="text-white">
+              <p className="text-white text-center">
                 Proporcionei uma cobertura completa do almoço dos
                 aniversariantes no Coco Bambu, registrando desde a saída até o
                 encerramento do evento. O objetivo foi transportar o público,
@@ -186,10 +190,10 @@ export default function Portifolio() {
 
               <br />
 
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue">
+              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center">
                 Cobertura entrega mimo dia das mães
               </h4>
-              <p className="text-white">
+              <p className="text-white text-center">
                 Cobertura da entrega de mimos com registros em foto e vídeo das
                 mães presenteadas na empresa. A ação foi retratada de forma leve
                 e afetiva, valorizando o momento e reforçando o cuidado da marca
@@ -198,11 +202,11 @@ export default function Portifolio() {
 
               <br />
 
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue">
+              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center">
                 Cobertura Beto Carreiro "Leões no park"
               </h4>
 
-              <p className="text-white">
+              <p className="text-white text-center">
                 Cobertura completa de todo o percurso de ida ao parque e dos
                 momentos vivenciados, incluindo entrevistas com colaboradores,
                 fotos, takes e boomerangs. O conteúdo foi pensado para
@@ -231,10 +235,10 @@ export default function Portifolio() {
 
             {/* Objetivo */}
             <div className="border-2 border-green-400 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green">
-                Objetivo:
+              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
+                Objetivo
               </h4>
-              <p className="text-white">
+              <p className="text-white text-center">
                 Captação, edição e publicação de vídeos, destacando campanhas e
                 ações da empresa de forma dinâmica e alinhada à identidade da
                 marca para redes sociais.

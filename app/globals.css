@@ -5,12 +5,12 @@
 @tailwind utilities;
 
 :root {
-  --neon-green: #00BE67;  
-  --neon-blue: #00A1D5;
-  --dark-blue: #001D31;
-  --deep-purple: #2B0E66;
-  --neon-pink: #F500BD;
-  --light-pink: #FF86C9;
+  --neon-green: #00be67;
+  --neon-blue: #00a1d5;
+  --dark-blue: #001d31;
+  --deep-purple: #2b0e66;
+  --neon-pink: #f500bd;
+  --light-pink: #ff86c9;
 }
 
 body {
@@ -111,9 +111,9 @@ html {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   body {
-    font-size: 60%;
+    font-size: 70%;
   }
   .hero-title {
     font-size: 2.5rem;
@@ -132,9 +132,9 @@ html {
   .about-text-title {
     font-size: 1.7rem;
   }
-}
+}*/
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
   .hero-title {
     font-size: 1.5rem;
   }
@@ -150,7 +150,7 @@ html {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
-}
+}*/
 
 /* Animation for decorative borders */
 @keyframes float {
@@ -192,7 +192,7 @@ html {
   padding: 3rem 1.5rem;
 }
 
-.about-section{
+.about-section {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -204,12 +204,12 @@ html {
   font-size: 2.5rem;
 }
 
-.portfolio-pieces{
+.portfolio-pieces {
   height: 100vh;
   display: flex;
 }
 
-.contato-section{
+.contato-section {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -238,7 +238,7 @@ html {
 }
 
 .neon-border::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -265,7 +265,7 @@ html {
   border: 1px solid var(--neon-pink);
   background-color: transparent;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -306,14 +306,17 @@ html {
 }
 
 .cyberpunk-grid::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    linear-gradient(to right, rgba(245, 0, 189, 0.1) 1px, transparent 1px),
+  background: linear-gradient(
+      to right,
+      rgba(245, 0, 189, 0.1) 1px,
+      transparent 1px
+    ),
     linear-gradient(to bottom, rgba(245, 0, 189, 0.1) 1px, transparent 1px);
   background-size: 20px 20px;
   pointer-events: none;
@@ -321,7 +324,11 @@ html {
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--deep-purple) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--dark-blue) 0%,
+    var(--deep-purple) 100%
+  );
 }
 
 @media (min-width: 1024px) {

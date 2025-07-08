@@ -1,4 +1,4 @@
-export default function Contact(){
+export default function Contact() {
   return (
     <div className="space-y-16 contato-section">
       <div className="text-center space-y-8">
@@ -13,7 +13,7 @@ export default function Contact(){
           className="justify-center whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 bg-pink-500 hover:bg-pink-600 text-white px-12 py-4 text-xl font-semibold border-2 border-pink-500 flex items-center gap-3 mx-auto"
           onClick={() =>
             window.open(
-              "https://wa.me/5511951085736?text=Ol%C3%A1%2C%20Carla%20!%0AGostaria%20de%20conhecer%20mais%20sobre%20o%20seu%20trabalho.",
+              "https://wa.me/5548988224714?text=Ol%C3%A1%2C%20Carla%20!%0AGostaria%20de%20conhecer%20mais%20sobre%20o%20seu%20trabalho.",
               "_blank"
             )
           }

@@ -33,7 +33,7 @@ export default function HomeSection() {
               className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 text-lg font-semibold border-2 border-pink-500 flex items-center gap-3"
               onClick={() =>
                 window.open(
-                  "https://wa.me/5511951085536?text=Ol%C3%A1%2C%20Carla%20!%0AGostaria%20de%20conhecer%20mais%20sobre%20o%20seu%20trabalho.",
+                  "https://wa.me/5548988224714?text=Ol%C3%A1%2C%20Carla%20!%0AGostaria%20de%20conhecer%20mais%20sobre%20o%20seu%20trabalho.",
                   "_blank"
                 )
               }
