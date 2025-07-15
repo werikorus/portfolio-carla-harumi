@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Carla Harumi - Potfólio",
+  title: "Carla Harumi - Portfólio",
   description:
     "Como posso te ajudar? Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC. Entre em contato: +55 11 951085736",
   keywords:
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Carla Harumi" }],
   creator: "Carla Harumi",
   openGraph: {
-    title: "Carla Harumi - Social Media | Storyteller | Videomaker Mobile",
+    title: "Carla Harumi - Portfólio",
     description:
       "Como posso te ajudar? Profissional de Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Carla Harumi - Social Media | Storyteller | Videomaker Mobile",
+    title: "Carla Harumi - Portfólio",
     description:
       "Como posso te ajudar? Profissional de Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC",
   },
@@ -45,7 +45,9 @@ export default function RootLayout({
       />
       <meta property="og:image" content={String(metadata?.openGraph?.images)} />
       <meta property="og:site_name" content="Carla Harumi - Potfólio" />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
