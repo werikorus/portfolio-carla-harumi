@@ -6,7 +6,7 @@ import { portFolioCards } from "./fragments/Constants";
 import SlideImages from "@/components/SlideImages/SlideImages";
 
 //TODO: mudar vídeos para google drive
-//TODO: centralizar títulos e textos
+
 
 export default function Portifolio() {
   const carrocelFrida = [
@@ -48,15 +48,15 @@ export default function Portifolio() {
       <div className="space-y-16 portfolio-container">
         <div className="text-center">
           <h1 className="text-4xl lg:text-6xl font-bold">
-            <span className="text-green-400 neon-text-green">Case Social</span>
-            <span className="text-pink-500 neon-text-pink"> Media</span>
+            <span className="text-green-400 neon-text-green bruno-ace-regular">Case Social</span>
+            <span className="text-pink-500 neon-text-pink bruno-ace-regular"> Media</span>
           </h1>
         </div>
 
         <div className="space-y-8">
           {/* Dia da Mulher - Frida Kahlo */}
           <div className="space-y-6">
-            <h1 className="text-4xl lg:text-4xl font-bold text-blue-400 neon-text-blue text-center">
+            <h1 className="text-4xl lg:text-4xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
               Criação de conteúdo
             </h1>
             {/* Carrossel de imagens */}
@@ -96,7 +96,7 @@ export default function Portifolio() {
           <br />
           {/* Stories */}
           <div className="space-y-6">
-            <h3 className="text-4xl lg:text-4xl font-bold text-green-400 text-center neon-text-green">
+            <h3 className="text-4xl lg:text-4xl font-bold text-green-400 text-center neon-text-green bruno-ace-regular">
               Stories
             </h3>
             <p className="text-white text-center">
@@ -119,7 +119,7 @@ export default function Portifolio() {
           <br />
           {/* Rosto da Marca */}
           <div className="space-y-6">
-            <h3 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center">
+            <h3 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center bruno-ace-regular">
               Rosto da Marca
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -149,13 +149,13 @@ export default function Portifolio() {
           <br />
           {/* Captação e edição */}
           <div className="text-center py-8">
-            <h2 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center">
+            <h2 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center bruno-ace-regular">
               Captação e edição
             </h2>
           </div>
           {/* Storymaker */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-green-400 text-center neon-text-green">
+            <h3 className="text-2xl font-bold text-green-400 text-center neon-text-green bruno-ace-regular">
               Storymaker
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -176,7 +176,7 @@ export default function Portifolio() {
               </h4>
               <br />
 
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center">
+              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
                 Almoço Coco Bambu
               </h4>
 
@@ -190,7 +190,7 @@ export default function Portifolio() {
 
               <br />
 
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center">
+              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
                 Cobertura entrega mimo dia das mães
               </h4>
               <p className="text-white text-center">
@@ -202,7 +202,7 @@ export default function Portifolio() {
 
               <br />
 
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center">
+              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
                 Cobertura Beto Carreiro "Leões no park"
               </h4>
 
@@ -218,7 +218,7 @@ export default function Portifolio() {
           <br />
           {/* Videomaker Mobile */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-blue-500 neon-text-blue text-center">
+            <h3 className="text-2xl font-bold text-blue-500 neon-text-blue text-center bruno-ace-regular">
               Videomaker Mobile
             </h3>
 

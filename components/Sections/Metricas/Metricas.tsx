@@ -23,8 +23,8 @@ export default function Metricas() {
       <div className="space-y-16 text-center">
         <div className="text-center">
           <h1 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center">
-            <span className="text-green-400 neon-text-green">Métrica de</span>
-            <span className="text-pink-500 neon-text-pink"> engajamento</span>
+            <span className="text-green-400 neon-text-green bruno-ace-regular">Métrica de</span>
+            <span className="text-pink-500 neon-text-pink bruno-ace-regular">engajamento</span>
           </h1>
         </div>
 
