@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import FullScreenImage from "@/components/FullScreenImage/FullScreenImage";
 import { useMediaQuery } from "usehooks-ts";

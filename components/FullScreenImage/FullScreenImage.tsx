@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Carousel } from "@material-tailwind/react";
 
 export default function FullScreenImage({
   src,

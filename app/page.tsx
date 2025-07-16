@@ -10,6 +10,8 @@ import Metricas from "@/components/Sections/Metricas/Metricas";
 import Contact from "@/components/Sections/Contact/Contact";
 import { useEffect, useState } from "react";
 
+export const runtime = 'edge';
+
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
 
