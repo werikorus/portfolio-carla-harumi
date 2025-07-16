@@ -26,14 +26,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-900 relative overflow-hidden pt-24">
-      {/* <Image
-        alt="footer-background"
-        src="/images/quad-background.png"
-        width={1350}
-        height={1080}
-        className="fixed z-0 opacity-25 pointer-events-none justify-self-center w-auto h-auto"
-      /> */}
-      {/* Grid Pattern Background */}
       <div
         className="absolute inset-0 opacity-20"
         style={{
@@ -46,7 +38,6 @@ export default function Home() {
       />
 
       {/* Header */} 
-      {/* TODO: fazer o header ficar flutuante para quando mover a pagina */}
       <header className={`fixed top-0 left-0 w-full z-50 bg-slate-900 px-6 py-6 lg:px-12 flex items-center justify-between transition-shadow duration-300 ${
         scrolled ? "shadow-md" : ""}`}
       >
@@ -106,8 +97,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="relative z-10">
-       
+      <main className="relative z-10">      
         <HomeSection />
         {/* <About /> */}
         <Portifolio />

@@ -2,47 +2,17 @@
 import { Video } from "@/components/Video";
 import Image from "next/image";
 import Cards from "./fragments/Cards/Cards";
-import { portFolioCards } from "./fragments/Constants";
 import SlideImages from "@/components/SlideImages/SlideImages";
-
-//TODO: mudar vídeos para google drive
-
+import {
+  carrocelFrida, 
+  stories, 
+  entrevistas, 
+  storymakerVideos, 
+  videomakerMobileVideos,
+  carrocelPosts
+} from './pathAttachments';
 
 export default function Portifolio() {
-  const carrocelFrida = [
-    "/images/portfolio/carrocel-frida/CARROSSEL1.webp",
-    "/images/portfolio/carrocel-frida/CARROSSEL2.webp",
-    "/images/portfolio/carrocel-frida/CARROSSEL3.webp",
-    "/images/portfolio/carrocel-frida/CARROSSEL4.webp",
-    "/images/portfolio/carrocel-frida/CARROSSEL5.webp",
-  ];
-
-  const stories = [
-    "https://portifolio-carla-harumi.b-cdn.net/stories/story-cada-pesssoa-importa.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/stories/story-dia-da-fruta.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/stories/story-felipe.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/stories/story-andre.mp4",
-  ];
-
-  const entrevistas = [
-    "https://portifolio-carla-harumi.b-cdn.net/rosto-da-marca/rosto-da-marca-1.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/rosto-da-marca/rosto-da-marca-2.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/rosto-da-marca/rosto-da-marca-3.mp4",
-  ];
-
-  const storymakerVideos = [
-    "https://portifolio-carla-harumi.b-cdn.net/storymaker/storymaker-coco-bambu.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/storymaker/storymaker-dia-das-maes.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/storymaker/storymaker-beto-carreiro.mp4",
-  ];
-
-  const videomakerMobileVideos = [
-    "https://portifolio-carla-harumi.b-cdn.net/videomaker-mobile/videomaker-mobile-1.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/videomaker-mobile/videomaker-mobile-2.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/videomaker-mobile/videomaker-mobile-3.mp4",
-    "https://portifolio-carla-harumi.b-cdn.net/videomaker-mobile/videomaker-mobile-4.mp4",
-  ];
-
   return (
     <section id="portfolio" className="section-container">
       <div className="space-y-16 portfolio-container">
@@ -59,41 +29,15 @@ export default function Portifolio() {
             <h1 className="text-4xl lg:text-4xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
               Criação de conteúdo
             </h1>
-            {/* Carrossel de imagens */}
+            {/* Carrossel de imagens Frida */}
             <SlideImages images={carrocelFrida} />
 
-            {/* Objetivo */}
-            <div className="border-2 border-green-400 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
-                Objetivo
-              </h4>
-              <p className="text-white text-center">
-                Criado para ir além da homenagem tradicional, este carrossel usa
-                Frida Kahlo como símbolo de superação, incentivando o
-                autoconhecimento e o protagonismo feminino de forma estratégica
-                e inspiradora.
-              </p>
-            </div>
-          </div>
-          <br />
-          {/* CARDS: Baile do Leão  - Carta 4 Uno*/}
-          <div
-            //className="flex justify-around bg-slate-800 rounded-xl"
-            className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 bg-slate-800 rounded-xl text-center"
-            style={{ padding: "1rem" }}
-          >
-            <Cards
-              image={portFolioCards[0].image}
-              subscription={portFolioCards[0].subscription}
-            />
-            <Cards
-              image={portFolioCards[1].image}
-              subscription={portFolioCards[1].subscription}
-            />
+            <SlideImages images={carrocelPosts} />
+
+
           </div>
 
-          <br />
-          <br />
+
           {/* Stories */}
           <div className="space-y-6">
             <h3 className="text-4xl lg:text-4xl font-bold text-green-400 text-center neon-text-green bruno-ace-regular">
