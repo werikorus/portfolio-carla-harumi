@@ -15,7 +15,7 @@ const SlideImages: React.FC<SlideImagesProps> = ({ images }) => {
       <Carousel
         transition={{ duration: 1 }}
         className="rounded-xl"
-        placeholder="FRIDA"
+        placeholder="image"
         onResize={() => console.log("onPointerLeaveCapture")}
         onResizeCapture={() => console.log("onPointerLeaveCapture")}
         onPointerEnterCapture={() => console.log("onPointerEnterCapture")}
@@ -25,11 +25,11 @@ const SlideImages: React.FC<SlideImagesProps> = ({ images }) => {
         {images.map((src, i) => (
           <div key={i} className="rounded-sm overflow-hidden">
             <Image
-              src={`${src}?height=1350&width=1080&text=Frida+Kahlo`}
-              alt={`Frida Kahlo ${i}`}
+              src={`${src}?height=1350&width=1080&text=image`}
+              alt={`image ${i}`}
               width={1350}
               height={1080}
-              className="object-cover"
+              className="object-cover w-auto h-auto"
               placeholder="blur"
               blurDataURL={src}
             />
@@ -44,8 +44,8 @@ const SlideImages: React.FC<SlideImagesProps> = ({ images }) => {
       {images.map((i) => (
         <div key={i} className="rounded-lg overflow-hidden">
           <FullScreenImage
-            src={`${i}?height=1350&width=1080&text=Frida+Kahlo`}
-            alt={`Frida Kahlo ${i}`}
+            src={`${i}?height=1350&width=1080&text=full+image`}
+            alt={`fullImage${i}`}
           />
         </div>
       ))}
