@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Carousel } from "@material-tailwind/react";
 
 export default function FullScreenImage({
   src,
@@ -18,16 +17,16 @@ export default function FullScreenImage({
     <>
       {/* Imagem clicável */}
       <div
-        className="w-auto h-auto cursor-zoom-in"
+        className="cursor-zoom-in"
         onClick={() => setIsOpen(true)}
       >
         <Image
           src={src}
           alt={alt || "Imagem"}
           objectFit="cover"
-          className="rounded shadow w-auto h-auto object-cover"
-          width={1350}
-          height={1080}
+          className="rounded shadow object-cover"
+          width={500}
+          height={500}
         />
       </div>
 

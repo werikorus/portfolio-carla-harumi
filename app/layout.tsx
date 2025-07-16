@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Como posso te ajudar? Profissional de Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC",
     type: "website",
     locale: "pt_BR",
-    images: "/images/profile-image.webp",
+    images: "/images/profile-image2.webp",
   },
   twitter: {
     card: "summary_large_image",
