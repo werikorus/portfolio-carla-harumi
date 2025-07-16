@@ -29,12 +29,8 @@ export default function Portifolio() {
             <h1 className="text-4xl lg:text-4xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
               Criação de conteúdo
             </h1>
-            {/* Carrossel de imagens Frida */}
             <SlideImages images={carrocelFrida} />
-
             <SlideImages images={carrocelPosts} />
-
-
           </div>
 
 
