@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "bootstrap": "yarn cache clean && yarn install --update-checksums && yarn build"
+    "bootstrap": "yarn cache clean && yarn install --update-checksums && yarn build",
+    "build" : "npx @cloudflare/next-on-pages@1"
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
