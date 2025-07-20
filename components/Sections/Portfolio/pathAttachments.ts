@@ -24,40 +24,43 @@ import { source } from "framer-motion/client";
   ]
 
   export const storiesVagas = [
-    `${prefixVideosStorage}/stories/vagas/story-cada-pesssoa-importa.mp4`,
-    `${prefixVideosStorage}/stories/vagas/story-dia-da-fruta.mp4`,
-    `${prefixVideosStorage}/stories/vagas/story-por-aqui-a-gente-acredita.mp4`,
+    'SWBHRJiOVHo',
+    'DyZMyL_hU3k', 
+    'HrRfAf_w4Y4',
   ];
 
   
   export const storiesVendas = [
-    `${prefixVideosStorage}/stories/vendas/story-andre.mp4`,
-    `${prefixVideosStorage}/stories/vendas/story-felipe.mp4`,
-    `${prefixVideosStorage}/stories/vendas/story-kelly-na-vidal.mp4`,
+    '',
+    'QCwZs-EIgZM',
+    '',
+    // `${prefixVideosStorage}/stories/vendas/story-andre.mp4`, 
+    // `${prefixVideosStorage}/stories/vendas/story-felipe.mp4`,
+    // `${prefixVideosStorage}/stories/vendas/story-kelly-na-vidal.mp4`,
   ];
 
 
   export const rostodamarca = [
-    `${prefixVideosStorage}/rosto-da-marca/rosto-da-marca-1.mp4`,
-    `${prefixVideosStorage}/rosto-da-marca/rosto-da-marca-2.mp4`,
-    `${prefixVideosStorage}/rosto-da-marca/rosto-da-marca-3.mp4`,
+    `HgEBAkpDxKo`,
+    `kiWJT8T6bHU`,
+    `RZhEBlBVVjk`,
   ];
 
   export const metricasVideos = [
     {
       title: "Dia da Mulher - Frida Kahlo",
       description: "O carrossel de Dia da Mulher apresentou alta taxa de engajamento (17,2%), desempenho acima da média para o formato.",
-      source: `${prefixVideosStorage}/metricas/metrica-1-dia-das-mulheres.mp4`,
+      source: `i60OOcG_lK0`,
     },
     {
       title: "FS Movies",
       description: "O Reels FS Movies obteve excelente volume de interações, evidenciando forte identificação do público com a ação.",
-      source: `${prefixVideosStorage}/metricas/metrica-2-fs-movies.mp4`,
+      source: `UD4-ePTPYv4`,
     },
     {
       title: "Cada pessoa importa",
       description: "A senquência de Stories sobre vagas foi estruturada de forma estratégica, com o uso de caixinhas e reações para gerar proximidade e engajamento de forma leve e interativa.",
-      source: `${prefixVideosStorage}/metricas/metrica-3-cada-pessoa-importa.mp4`,
+      source: `-4NrZxxyq4g`,
     }
   ];
 

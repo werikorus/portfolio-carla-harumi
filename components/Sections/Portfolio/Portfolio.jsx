@@ -53,7 +53,7 @@ export default function Portifolio() {
             </p>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
               {storiesVagas.map((source, index) => (
-                <Video key={index} source={source} />
+                <Video key={index} videoId={source} />
               ))}
             </div>
             <br />
@@ -85,7 +85,7 @@ export default function Portifolio() {
                   key={source}
                   className="aspect-[9/16] bg-slate-800 rounded-lg overflow-hidden "
                 >
-                  <Video source={source} />
+                  <Video videoId={source} />
                 </div>
               ))}
             </div>
@@ -105,7 +105,7 @@ export default function Portifolio() {
                 {metricasVideos.map((metrica, idx) => (                
                   <Card key={idx} className="bg-slate-800 border-slate-800">
                     <Card key={idx} className="bg-slate-800 border-slate-800 mb-4">
-                      <Video source={metrica.source} key={idx}/>
+                      <Video videoId={metrica.source} key={idx}/>
                     </Card>     
                     <CardContent className="content-center">
                       <h3 className="text-lg text-green-400 neon-text-green mb-4 bruno-ace-regular">
