@@ -48,22 +48,16 @@ export default function Home() {
 
         <nav className="hidden md:flex items-center space-x-8">
           <a
-            href="#sobre"
+            href="#home"
             className="text-white transition-colors hover:text-pink-500"
           >
-            Sobre
+            Home
           </a>
           <a
             href="#portfolio"
             className="text-white hover:text-pink-500 transition-colors"
           >
             Portfólio
-          </a>
-          <a
-            href="#metricas"
-            className="text-white hover:text-pink-500 transition-colors"
-          >
-            Métricas
           </a>
           <Button
             variant="outline"
@@ -99,9 +93,9 @@ export default function Home() {
       {/* Main Content */}
       <main className="relative z-10">      
         <HomeSection />
-        {/* <About /> */}
         <Portifolio />
-        <Metricas />
+        {/* <Metricas /> */}
+        {/* <About /> */}
         <Contact />
       </main>
     </div>

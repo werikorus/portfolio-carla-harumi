@@ -41,11 +41,11 @@ const SlideImages: React.FC<SlideImagesProps> = ({ images }) => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
-      {images.map((i) => (
-        <div key={i} className="rounded-lg overflow-hidden">
+      {images.map((image, index) => (
+        <div key={index} className="rounded-lg overflow-hidden">
           <FullScreenImage
-            src={`${i}?height=1350&width=1080&text=full+image`}
-            alt={`fullImage${i}`}
+            src={`${image}?height=1350&width=1080&text=full+image`}
+            alt={`fullImage${image}`}
           />
         </div>
       ))}

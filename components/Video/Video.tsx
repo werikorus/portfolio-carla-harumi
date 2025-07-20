@@ -7,15 +7,14 @@ export const Video = (videoProps: VideoProps) => {
   const { source } = videoProps;
 
   return (
-    <Suspense>
+    <Suspense fallback={<span>Loading...</span>}>
       <video
         autoPlay
         muted
         loop
         playsInline
         controls
-        //style={{ width: "100%", height: "100%" }}
-        className="w-auto h-auto rounded-lg"
+        className="w-full h-full aspect-[9/16] rounded-lg overflow-hidden bg-slate-800"
         preload="none"
       >
         <source src={source} type="video/mp4" />

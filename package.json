@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "bootstrap": "yarn cache clean && yarn install --update-checksums && yarn build",
-    "build" : "npx @cloudflare/next-on-pages@1"
+    "bootstrap": "yarn cache clean && yarn install --update-checksums && yarn build"
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
@@ -28,6 +28,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vercel/blob": "^1.1.1",
     "postcss": "^8.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"

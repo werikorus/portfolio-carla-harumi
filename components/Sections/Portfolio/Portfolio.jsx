@@ -5,12 +5,18 @@ import Cards from "./fragments/Cards/Cards";
 import SlideImages from "@/components/SlideImages/SlideImages";
 import {
   carrocelFrida, 
-  stories, 
-  entrevistas, 
+  rostodamarca, 
   storymakerVideos, 
   videomakerMobileVideos,
-  carrocelPosts
+  carrocelPosts,
+  storiesVagas,
+  storiesVendas,
+  metricasVideos,
+  captacaoEdicao
 } from './pathAttachments';
+import { Card, CardContent } from "@/components/ui/card";
+
+
 
 export default function Portifolio() {
   return (
@@ -24,6 +30,7 @@ export default function Portifolio() {
         </div>
 
         <div className="space-y-8">
+
           {/* Dia da Mulher - Frida Kahlo */}
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-4xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
@@ -32,23 +39,33 @@ export default function Portifolio() {
             <SlideImages images={carrocelFrida} />
             <SlideImages images={carrocelPosts} />
           </div>
-
+          <br />
 
           {/* Stories */}
           <div className="space-y-6">
             <h3 className="text-4xl lg:text-4xl font-bold text-green-400 text-center neon-text-green bruno-ace-regular">
               Stories
             </h3>
-            <p className="text-white text-center">
-              Sequências de storys com foco em vagas e vendas, estruturadas de
-              forma estratégica.
-            </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 color-yellow">
-              {stories.map((source) => (
+            <br />
+            <p className="text-white text-center">
+              Sequência de stories com foco em vagas
+            </p>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+              {storiesVagas.map((source, index) => (
+                <Video key={index} source={source} />
+              ))}
+            </div>
+            <br />
+            <br />
+            <p className="text-white text-center">
+              Sequência de stories com foco em vendas
+            </p>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+              {storiesVendas.map((source) => (
                 <div
                   key={source}
-                  className="aspect-[9/16] bg-slate-700 rounded-lg overflow-hidden"
+                  className="aspect-[9/16] bg-slate-800 rounded-lg overflow-hidden"
                 >
                   <Video source={source} />
                 </div>
@@ -56,133 +73,104 @@ export default function Portifolio() {
             </div>
           </div>
           <br />
-          <br />
+
           {/* Rosto da Marca */}
           <div className="space-y-6">
-            <h3 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center bruno-ace-regular">
+            <h3 className="text-4xl lg:text-4xl font-bold text-green-400 neon-text-green text-center bruno-ace-regular">
               Rosto da Marca
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {entrevistas.map((source) => (
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+              {rostodamarca.map((source) => (
                 <div
                   key={source}
-                  className="aspect-[9/16] bg-slate-700 rounded-lg overflow-hidden"
+                  className="aspect-[9/16] bg-slate-800 rounded-lg overflow-hidden "
                 >
                   <Video source={source} />
                 </div>
               ))}
             </div>
+          </div>
+          <br />
 
-            <div className="border-2 border-green-400 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
-                Objetivo
-              </h4>
-              <p className="text-white text-center">
-                Minha participação como entrevistadora nos vídeos teve como
-                objetivo representar o clima leve e alto astral da empresa,
-                comunicando campanhas, ações e acontecimentos internos de forma
-                descontraída. Uma estratégia para reforçar os ideais da marca em
-                relação à sua cultura e relação com as pessoas.
-              </p>
+          {/* Métricas */}
+          <div className="space-y-16 text-center">
+            <div className="text-center">
+              <h1 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center">
+                <span className="text-green-400 neon-text-green bruno-ace-regular">Métricas de engajamento</span>
+              </h1>
+            </div>
+
+            <div className="space-y-6" >
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+                {metricasVideos.map((metrica, idx) => (                
+                  <Card key={idx} className="bg-slate-800 border-slate-800">
+                    <Card key={idx} className="bg-slate-800 border-slate-800 mb-4">
+                      <Video source={metrica.source} key={idx}/>
+                    </Card>     
+                    <CardContent className="content-center">
+                      <h3 className="text-lg text-green-400 neon-text-green mb-4 bruno-ace-regular">
+                        {metrica.title}
+                      </h3>  
+                      <p className="text-white">
+                        {metrica.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
           <br />
+          <br />
+
           {/* Captação e edição */}
-          <div className="text-center py-8">
-            <h2 className="text-4xl lg:text-4xl font-bold text-pink-400 neon-text-pink text-center bruno-ace-regular">
+          <div className="text-center">
+            <h2 className="text-4xl lg:text-4xl font-bold text-green-400 neon-text-green text-center bruno-ace-regular">
               Captação e edição
             </h2>
           </div>
+          <br />
+
           {/* Storymaker */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-green-400 text-center neon-text-green bruno-ace-regular">
+            <h3 className="text-2xl font-bold text-pink-400 text-center neon-text-pink bruno-ace-regular">
               Storymaker
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {storymakerVideos.map((source) => (
-                <div
-                  key={source}
-                  className="aspect-[9/16] bg-slate-700 rounded-lg overflow-hidden"
-                >
-                  <Video source={source} />
-                </div>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+              {captacaoEdicao.storymaker.map((story, idx) => (
+                  <Card className="bg-slate-800 border-slate-800 p-3 min-h-full">                  
+                    <CardContent className="p-0 mt-4">
+                      <h3 className="text-sm text-green-400 neon-text-green bruno-ace-regular text-center">
+                        {story.title}
+                      </h3>  
+                      <p className="text-white mb-4">
+                        {story.description}
+                      </p>
+                    </CardContent>
+                    <Card className="bg-slate-800 border-slate-800 mb-4">
+                      <Video source={story.source}/>
+                    </Card>
+                  </Card>
               ))}
-            </div>
-
-            {/* Objetivo */}
-            <div className="border-2 border-green-400 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
-                Objetivos
-              </h4>
-              <br />
-
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
-                Almoço Coco Bambu
-              </h4>
-
-              <p className="text-white text-center">
-                Proporcionei uma cobertura completa do almoço dos
-                aniversariantes no Coco Bambu, registrando desde a saída até o
-                encerramento do evento. O objetivo foi transportar o público,
-                permitindo que acompanhassem e vivenciassem os momentos de forma
-                imersiva e próxima.
-              </p>
-
-              <br />
-
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
-                Cobertura entrega mimo dia das mães
-              </h4>
-              <p className="text-white text-center">
-                Cobertura da entrega de mimos com registros em foto e vídeo das
-                mães presenteadas na empresa. A ação foi retratada de forma leve
-                e afetiva, valorizando o momento e reforçando o cuidado da marca
-                com as pessoas.
-              </p>
-
-              <br />
-
-              <h4 className="text-xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
-                Cobertura Beto Carreiro "Leões no park"
-              </h4>
-
-              <p className="text-white text-center">
-                Cobertura completa de todo o percurso de ida ao parque e dos
-                momentos vivenciados, incluindo entrevistas com colaboradores,
-                fotos, takes e boomerangs. O conteúdo foi pensado para
-                representar de forma dinâmica a experiência vivida pelos
-                ganhadores da campanha.
-              </p>
             </div>
           </div>
           <br />
+          
           {/* Videomaker Mobile */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-blue-500 neon-text-blue text-center bruno-ace-regular">
+            <h3 className="text-2xl font-bold text-pink-400 neon-text-pink  text-center bruno-ace-regular">
               Videomaker Mobile
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              {videomakerMobileVideos.map((source) => (
+              {captacaoEdicao.videomakerMobile.map((video, index) => (
                 <div
-                  key={source}
-                  className="aspect-[9/16] bg-slate-700 rounded-lg overflow-hidden"
+                  key={index}
+                  className="aspect-[9/16] bg-slate-800 rounded-lg overflow-hidden"
                 >
-                  <Video source={source} />
+                  <Video source={video.source} />
                 </div>
               ))}
-            </div>
-
-            {/* Objetivo */}
-            <div className="border-2 border-green-400 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-green-400 mb-3 neon-text-green text-center">
-                Objetivo
-              </h4>
-              <p className="text-white text-center">
-                Captação, edição e publicação de vídeos, destacando campanhas e
-                ações da empresa de forma dinâmica e alinhada à identidade da
-                marca para redes sociais.
-              </p>
             </div>
           </div>
         </div>

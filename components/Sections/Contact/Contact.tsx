@@ -6,9 +6,8 @@ export default function Contact() {
       <div className="space-y-16 contato-container relative z-10">
         <div className="text-center space-y-8">
           <h1 className="text-4xl lg:text-6xl font-bold text-white bruno-ace-regular">
-            Pronto para dar o 
-            <br />
-            <span className="text-pink-500 neon-text-pink bruno-ace-regular">primeiro passo</span>?
+            Pronto para dar o {'\n'} 
+            <span className="text-pink-500 neon-text-pink">primeiro passo</span>?
           </h1>
           <p className="text-xl text-green-400 neon-text-green bruno-ace-regular">
             Me chama e vamos tirar seu projeto do papel!
