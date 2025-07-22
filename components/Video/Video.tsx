@@ -33,12 +33,24 @@ export const Video = (videoProps: VideoProps) => {
 
   return (
     <Suspense fallback={<span>Loading...</span>}>
-      <YouTube
+      {/* <YouTube
         videoId={videoId}
         opts={opts}
         onReady={onPlayerReady}
         className='w-full h-full aspect-[9/16] rounded-lg overflow-hidden bg-slate-800'
-      />
+      /> */}
+
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+        className="w-full h-full aspect-[9/16] rounded-lg overflow-hidden bg-slate-800"
+        preload="none"
+      >
+        <source src={videoId} type="video/mp4" />
+      </video>
     </Suspense>
   );
 };

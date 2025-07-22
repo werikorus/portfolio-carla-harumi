@@ -1,13 +1,8 @@
-//import { Video } from "@/components";
 import { Video } from "@/components/Video";
-import Image from "next/image";
-import Cards from "./fragments/Cards/Cards";
 import SlideImages from "@/components/SlideImages/SlideImages";
 import {
   carrocelFrida, 
   rostodamarca, 
-  storymakerVideos, 
-  videomakerMobileVideos,
   carrocelPosts,
   storiesVagas,
   storiesVendas,
@@ -15,8 +10,6 @@ import {
   captacaoEdicao
 } from './pathAttachments';
 import { Card, CardContent } from "@/components/ui/card";
-
-
 
 export default function Portifolio() {
   return (
@@ -28,10 +21,7 @@ export default function Portifolio() {
             <span className="text-pink-500 neon-text-pink bruno-ace-regular"> Media</span>
           </h1>
         </div>
-
         <div className="space-y-8">
-
-          {/* Dia da Mulher - Frida Kahlo */}
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-4xl font-bold text-blue-400 neon-text-blue text-center bruno-ace-regular">
               Criação de conteúdo
@@ -62,12 +52,12 @@ export default function Portifolio() {
               Sequência de stories com foco em vendas
             </p>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
-              {storiesVendas.map((source) => (
+              {storiesVendas.map((source, index) => (
                 <div
-                  key={source}
+                  key={index}
                   className="aspect-[9/16] bg-slate-800 rounded-lg overflow-hidden"
                 >
-                  <Video source={source} />
+                  <Video videoId={source} />
                 </div>
               ))}
             </div>
@@ -103,7 +93,7 @@ export default function Portifolio() {
             <div className="space-y-6" >
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
                 {metricasVideos.map((metrica, idx) => (                
-                  <Card key={idx} className="bg-slate-800 border-slate-800">
+                  <Card key={idx} className="bg-slate-800 border-slate-800 pt-3">
                     <Card key={idx} className="bg-slate-800 border-slate-800 mb-4">
                       <Video videoId={metrica.source} key={idx}/>
                     </Card>     
@@ -137,20 +127,20 @@ export default function Portifolio() {
               Storymaker
             </h3>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
-              {captacaoEdicao.storymaker.map((story, idx) => (
-                  <Card className="bg-slate-800 border-slate-800 p-3 min-h-full">                  
-                    <CardContent className="p-0 mt-4">
-                      <h3 className="text-sm text-green-400 neon-text-green bruno-ace-regular text-center">
-                        {story.title}
-                      </h3>  
-                      <p className="text-white mb-4">
-                        {story.description}
-                      </p>
-                    </CardContent>
-                    <Card className="bg-slate-800 border-slate-800 mb-4">
-                      <Video source={story.source}/>
-                    </Card>
+              {captacaoEdicao.storymaker.map((story, index) => (
+                <Card key={index} className="bg-slate-800 border-slate-800 p-3 min-h-full">
+                  <CardContent className="p-0 mt-4">
+                    <h3 className="text-sm text-green-400 neon-text-green bruno-ace-regular text-center">
+                      {story.title}
+                    </h3>  
+                    <p className="text-white mb-4">
+                      {story.description}
+                    </p>
+                  </CardContent>
+                  <Card className="bg-slate-800 border-slate-800 mb-4">
+                    <Video videoId={story.source}/>
                   </Card>
+                </Card>
               ))}
             </div>
           </div>
@@ -168,7 +158,7 @@ export default function Portifolio() {
                   key={index}
                   className="aspect-[9/16] bg-slate-800 rounded-lg overflow-hidden"
                 >
-                  <Video source={video.source} />
+                  <Video videoId={video.source} />
                 </div>
               ))}
             </div>
