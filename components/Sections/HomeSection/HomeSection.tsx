@@ -4,7 +4,7 @@ import { useMediaQuery } from "usehooks-ts";
 
 const handleRenderWebPage = () => {
   return (
-    <section id="sobre" className="section-container min-h-[calc(100vh-100px)] content-center">
+    <section id="home" className="section-container min-h-[calc(100vh-100px)] content-center">
       <div id="main" className="flex justify-center mb-8">
         <div className="content-center">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight neon-text-white bruno-ace-regular">

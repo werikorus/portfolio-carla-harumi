@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "bootstrap": "yarn cache clean && yarn install --update-checksums && yarn build"
@@ -19,6 +20,7 @@
     "next-themes": "^0.4.4",
     "react": "^19",
     "react-dom": "^19",
+    "react-youtube": "^10.1.0",
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^3.1.1"
   },
@@ -27,6 +29,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vercel/blob": "^1.1.1",
     "postcss": "^8.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
