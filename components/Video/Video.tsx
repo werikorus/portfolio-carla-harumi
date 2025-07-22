@@ -39,6 +39,7 @@ export const Video = (videoProps: VideoProps) => {
         onReady={onPlayerReady}
         className='w-full h-full aspect-[9/16] rounded-lg overflow-hidden bg-slate-800'
       /> */}
+      
 
       <video
         autoPlay
