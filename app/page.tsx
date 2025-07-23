@@ -97,6 +97,7 @@ export default function Home() {
         {/* <Metricas /> */}
         {/* <About /> */}
         <Contact />
+        {/* TODO: fazer rodapé "Direitos autorais - Carla Harumi - 2024 / Desenvolvidor por Werik" */}
       </main>
     </div>
   );
