@@ -12,10 +12,9 @@
   export const carrocelPosts = [
     '/images/portfolio/posts/post-baile-leao.webp',
     '/images/portfolio/posts/post-carta-mais-quatro.webp',
-    // '/images/portfolio/posts/qrcode-avaliacao.webp',
+    '/images/portfolio/posts/qrcode-avaliacao.webp',
     '/images/portfolio/posts/bom-dia-09-07.webp',
     '/images/portfolio/posts/bom-dia-07-07.webp',
-    '/images/portfolio/posts/template-avaliacao.webp',
   ]
 
   export const storiesVagas = [
@@ -23,7 +22,6 @@
     `${prefixVideosStorage}/stories/vagas/story-dia-da-fruta.mp4`,
     `${prefixVideosStorage}/stories/vagas/story-por-aqui-a-gente-acredita.mp4`,
   ];
-
   
   export const storiesVendas = [
     `${prefixVideosStorage}/stories/vendas/story-andre.mp4`, 

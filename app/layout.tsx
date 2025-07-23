@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     images: "/images/profile-image2.webp",
+    url: 'https://harumimobile.com.br',
   },
   twitter: {
     card: "summary_large_image",
