@@ -41,15 +41,22 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <meta property="og:site_name" content="Carla Harumi"></meta>
-      <title>{String(metadata?.openGraph?.title)}</title>
       <meta property="og:title" content={String(metadata?.openGraph?.title)} />
       <meta
-        property="description"
+        name="description"
         content={String(metadata?.openGraph?.description)}
       />
-      <meta property="og:image" content={String(metadata?.openGraph?.images)} />
-      <meta property="og:site_name" content="Carla Harumi - Potfólio" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico" />
+      <meta property="og:description" content={String(metadata?.openGraph?.description)} />
+      <meta
+        property="og:image"
+        content={
+          Array.isArray(metadata?.openGraph?.images)
+            ? String(metadata.openGraph.images[0])
+            : String(metadata?.openGraph?.images)
+        }
+      />
+      <meta property="og:site_name" content={String(metadata?.openGraph?.siteName)} />
+      <link rel="icon" type="image/x-icon" sizes="16x16" href="/images/favicon.ico" />
       <body className={inter.className}>
         {children}
       </body>
