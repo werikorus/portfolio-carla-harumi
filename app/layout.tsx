@@ -19,15 +19,18 @@ export const metadata: Metadata = {
       "Como posso te ajudar? Profissional de Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC",
     type: "website",
     locale: "pt_BR",
-    images: "/images/profile-image2.webp",
-    url: 'https://harumimobile.com.br',
+    images: ["/images/profile-image2.webp"],
+    url: "https://harumimobile.com.br",
+    siteName: "Carla Harumi - Portfólio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Carla Harumi - Portfólio",
     description:
       "Como posso te ajudar? Profissional de Social Media, Storyteller e Videomaker Mobile em Florianópolis - SC",
+    images: ["/images/profile-image2.webp"],
   },
+  metadataBase: new URL("https://harumimobile.com.br"),
 };
 
 export default function RootLayout({
