@@ -1,12 +1,7 @@
 "use client";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import Video from "@/components/Video/Video";
 import HomeSection from "@/components/Sections/HomeSection/HomeSection";
-import About from "@/components/Sections/About/About";
 import Portifolio from "@/components/Sections/Portfolio/Portfolio";
-import Metricas from "@/components/Sections/Metricas/Metricas";
 import Contact from "@/components/Sections/Contact/Contact";
 import { useEffect, useState } from "react";
 
@@ -41,12 +36,15 @@ export default function Home() {
       <header className={`fixed top-0 left-0 w-full z-50 bg-slate-900 px-6 py-6 lg:px-12 flex items-center justify-between transition-shadow duration-300 ${
         scrolled ? "shadow-md" : ""}`}
       >
+        <a href="#home">
+          <div className="text-2xl font-bold text-pink-500 neon-text-pink bruno-ace-regular"
+            style={{ cursor: "pointer" }}
+          >
+            Carla Harumi
+          </div>
+        </a>
 
-        <div className="text-2xl font-bold text-pink-500 neon-text-pink">
-          Carla Harumi
-        </div>
-
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-8 bruno-ace-regular">
           <a
             href="#home"
             className="text-white transition-colors hover:text-pink-500"
@@ -61,7 +59,7 @@ export default function Home() {
           </a>
           <Button
             variant="outline"
-            className="border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white transition-colors"
+            className="bg-pink-600 border-pink-500 text-white hover:bg-pink-500 hover:text-white transition-colors"
             onClick={() =>
               document
                 .getElementById("contato")
@@ -82,9 +80,8 @@ export default function Home() {
             className="bg-slate-800 text-white border border-pink-500 neon-text-pink rounded px-3 py-1"
           >
             <option value="">Menu</option>
-            <option value="sobre">Sobre</option>
+            <option value="sobre">Home</option>
             <option value="portfolio">Portfólio</option>
-            <option value="metricas">Métricas</option>
             <option value="contato">Contato</option>
           </select>
         </div>
