@@ -1,9 +1,10 @@
 "use client";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import HomeSection from "@/components/Sections/HomeSection/HomeSection";
 import Portifolio from "@/components/Sections/Portfolio/Portfolio";
+import Footer from "@/components/Footer/Footer";
 import Contact from "@/components/Sections/Contact/Contact";
-import { useEffect, useState } from "react";
 
 export const runtime = 'edge';
 
@@ -91,10 +92,8 @@ export default function Home() {
       <main className="relative z-10">      
         <HomeSection />
         <Portifolio />
-        {/* <Metricas /> */}
-        {/* <About /> */}
         <Contact />
-        {/* TODO: fazer rodapé "Direitos autorais - Carla Harumi - 2024 / Desenvolvidor por Werik" */}
+        <Footer />
       </main>
     </div>
   );

@@ -1,12 +1,11 @@
-import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section id="contato" className="flex">
+    <section id="contato">
       <div className="space-y-16 contato-container relative z-10">
         <div className="text-center space-y-8">
-          <h1 className="text-4xl lg:text-6xl font-bold text-white bruno-ace-regular">
-            Pronto para dar o {'\n'} 
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white bruno-ace-regular">
+            Pronto para dar o <p></p>
             <span className="text-pink-500 neon-text-pink">primeiro passo</span>?
           </h1>
           <p className="text-xl text-green-400 neon-text-green bruno-ace-regular">
@@ -26,13 +25,6 @@ export default function Contact() {
           </button>
         </div>
       </div>
-      <Image
-        alt="footer-background"
-        src="/images/footer-background.webp"
-        width={1350}
-        height={1080}
-        className="absolute z-0 opacity-25 object-cover pointer-events-none opacity-25 w-auto h-auto self-end"
-      />
     </section>
   );
 }

@@ -13,8 +13,8 @@ const handleRenderWebPage = () => {
             <span className="text-pink-500 neon-text-pink">te ajudar</span>?
           </h1>
 
-          <div id="labels-and-buttons" className="content-center mb-8 min-w-[calc(70%)] w-[calc(70%)]">
-            <p className="lg:text-1xl leading-relaxed mb-8 bruno-ace-regular">
+          <div id="labels-and-buttons" className="content-center mb-8">
+            <p className="lg:text-[1.27rem] leading-relaxed mb-8">
               <span className="text-green-400 neon-text-green">
                 Social Media
               </span>

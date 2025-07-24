@@ -21,7 +21,7 @@ export default function FullScreenImage({
         <Image
           src={src}
           alt={alt || "Imagem"}
-          objectFit="cover"
+           style={{ objectFit: 'cover' }}
           className="rounded shadow object-cover"
           width={500}
           height={500}

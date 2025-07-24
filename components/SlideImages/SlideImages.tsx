@@ -16,11 +16,11 @@ const SlideImages: React.FC<SlideImagesProps> = ({ images }) => {
         transition={{ duration: 1 }}
         className="rounded-xl"
         placeholder="image"
-        onResize={() => console.log("onPointerLeaveCapture")}
-        onResizeCapture={() => console.log("onPointerLeaveCapture")}
-        onPointerEnterCapture={() => console.log("onPointerEnterCapture")}
-        onPointerLeaveCapture={() => console.log("onPointerLeaveCapture")}
+        onResize={undefined}
+        onResizeCapture={undefined}
         draggable={true}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
         {images.map((src, i) => (
           <div key={i} className="rounded-sm overflow-hidden">
