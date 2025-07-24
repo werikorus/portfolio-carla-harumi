@@ -28,5 +28,3 @@ export default function Contact() {
     </section>
   );
 }
-
-//export default Contact;
