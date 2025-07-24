@@ -1,4 +1,3 @@
-// app/components/FullScreenImage.tsx
 "use client";
 import { useState } from "react";
 import Image from "next/image";
@@ -15,7 +14,6 @@ export default function FullScreenImage({
 
   return (
     <>
-      {/* Imagem clicável */}
       <div
         className="cursor-zoom-in"
         onClick={() => setIsOpen(true)}
@@ -23,14 +21,13 @@ export default function FullScreenImage({
         <Image
           src={src}
           alt={alt || "Imagem"}
-          objectFit="cover"
+           style={{ objectFit: 'cover' }}
           className="rounded shadow object-cover"
           width={500}
           height={500}
         />
       </div>
 
-      {/* Modal fullscreen */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
