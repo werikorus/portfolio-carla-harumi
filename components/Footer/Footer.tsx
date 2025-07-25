@@ -10,23 +10,19 @@ export default function Footer() {
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Carla Harumi. Todos os direitos reservados.
         </p>
-        <div>
-        <div className="flex justify-center">
-          <p className="text-xs mt-2">
-            Desenvolvido por{" "}
-            <a href={process.env.NEXT_LINK_DEV_PROFILE}
-              className="hover:text-blue-400 transition-colors"
-              target="_blank"
-              style={{ cursor: "pointer" }} 
-            >
-              <strong>
-                Werik Santos
-              </strong>                       
-            </a>            
-          </p>
-          <img className="h-4 w-4 mt-2" src="/images/code-tech.svg" alt="codedev" />
-        </div> 
-        </div>
+          <div className="flex justify-center">
+            <p className="text-xs mt-2">
+              Desenvolvido por{" "}
+              <a href={process.env.NEXT_LINK_DEV_PROFILE}
+                className="hover:text-blue-400 transition-colors"
+                target="_blank"
+                style={{ cursor: "pointer" }} 
+              >
+                <strong>Werik Santos</strong>                       
+              </a>            
+            </p>
+            <img className="h-4 w-4 mt-2" src="/images/code-tech.svg" alt="codedev" />
+          </div>
       </div>
       <Image
         alt="footer-background"

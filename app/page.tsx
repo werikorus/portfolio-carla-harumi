@@ -15,26 +15,16 @@ export default function Home() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-900 relative overflow-hidden pt-24">
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(59, 130, 246, 0.1) 2px, transparent 1px),
-            linear-gradient(90deg, rgba(59, 130, 246, 0.1) 2px, transparent 1px)
-          `,
-          backgroundSize: "40px 40px",
-        }}
-      />
+    <div className="min-h-screen relative overflow-hidden pt-24">
+      <div className="absolute inset-0 opacity-20" />
 
       {/* Header */} 
-      <header className={`fixed top-0 left-0 w-full z-50 bg-slate-900 px-6 py-6 lg:px-12 flex items-center justify-between transition-shadow duration-300 ${
+      <header className={`fixed top-0 left-0 h-16 w-full z-50 bg-slate-900 px-6 py-6 lg:px-12 flex items-center justify-between transition-shadow duration-300 ${
         scrolled ? "shadow-md" : ""}`}
       >
         <a href="#home">

@@ -19,8 +19,6 @@ const SlideImages: React.FC<SlideImagesProps> = ({ images }) => {
         onResize={undefined}
         onResizeCapture={undefined}
         draggable={true}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
       >
         {images.map((src, i) => (
           <div key={i} className="rounded-sm overflow-hidden">

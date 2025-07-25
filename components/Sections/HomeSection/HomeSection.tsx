@@ -2,6 +2,22 @@ import { Button } from "@/components/ui/button";
 import FullScreenImage from "@/components/FullScreenImage/FullScreenImage";
 import { useMediaQuery } from "usehooks-ts";
 
+const presentationText = () => {
+  return (
+    <div className="space-y-2 text-white text-lg lg:text-xl leading-relaxed max-w-5xl mx-auto text-center">
+      <p>
+        Unindo criatividade, estratégia e conexão, atuo como Social Media, Storymaker e Videomaker Mobile.
+      </p>
+      <p>
+        Crio conteúdos direcionados, storys que engajam e vídeos otimizados para redes sociais.
+      </p>
+      <p>
+        Também atuo como rosto da marca e represento marcas em frente às câmeras, fortalecendo o vínculo com o público e transmitindo os valores da marca.
+      </p>
+    </div>
+  );
+}
+
 const handleRenderWebPage = () => {
   return (
     <section id="home" className="section-container min-h-[calc(100vh-100px)] content-center">
@@ -59,12 +75,7 @@ const handleRenderWebPage = () => {
       </div>
       <div id="text-about">
         <div className="space-y-2 text-white text-lg leading-relaxed max-w-5xl mx-auto text-center">
-          <p>
-            Unindo criatividade, estratégia e conexão, atuo como Social Media, Storymaker e Videomaker Mobile.
-            Crio conteúdos direcionados, storys que engajam e vídeos otimizados para redes sociais.
-            Também atuo como rosto da marca e represendo marcas em frente às câmeras, fortalecendo o vínculo com o público e transmitindo
-            os valores da marca.           
-          </p>
+          {presentationText()}
         </div>
       </div>
     </section>
@@ -127,24 +138,17 @@ const handleRenderMobile = () => {
         </div>
       </div>
       <div id="text-about">
-        <div className="space-y-2 text-white text-lg leading-relaxed max-w-5xl mx-auto text-center">
-          <p>
-            Unindo criatividade, estratégia e conexão, atuo como Social Media, Storymaker e Videomaker Mobile.
-            Crio conteúdos direcionados, storys que engajam e vídeos otimizados para redes sociais.
-            Também atuo como rosto da marca e represendo marcas em frente às câmeras, fortalecendo o vínculo com o público e transmitindo
-            os valores da marca.           
-          </p>
-        </div>
+        {presentationText()}
       </div>
-    </section>
+  </section>
   );
 }
 
 export default function HomeSection() {
   const isMobile = useMediaQuery("(max-width:768px)");
 
-  return !isMobile 
-    ? handleRenderWebPage() 
+  return !isMobile
+    ? handleRenderWebPage()
     : handleRenderMobile();
 }
 
